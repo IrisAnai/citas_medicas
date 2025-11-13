@@ -8,44 +8,45 @@
 <body>
 <center>
     <h1>Agendar cita</h1>
-    <form action="php/proceso.php" method="post">
+    <form action="../php/proceso.php" method="post">
         <table>
             <tr>
                 <td>Paciente:</td>
-                <td><input id="paciente" type="text"></td>
+                <td><input id="paciente" name="paciente" type="text"></td>
             </tr>
             <tr>
                 <td>Medico:</td>
-                <td><input id="medico" type="text"></td>
+                <td><input id="medico" type="text" name="medico"></td>
             </tr>
             <tr>
                 <td>Fecha:</td>
-                <td><input id="feha" type="date"></td>
+                <td><input id="fecha" type="date" name="fecha"></td>
             </tr>
             <tr>
                 <td>Hora:</td>
-                <td><input id="hora" type="time"></td>
+                <td><input id="hora" type="time" name="hora"></td>
             </tr>
             <tr>
                 <td>Especialidad del medico:</td>
                 <td>
-                    <select name="profecion" id="profecion">
-                        <option value="">medico familiar</option>
-                        <option value="">medico interno</option>
-                        <option value="">pediatría</option>
-                        <option value="">Ginecologo</option>
-                        <option value="">cirujano general</option>
-                        <option value="">dermatólogo</option>
-                        <option value="">Cardiólogo</option>
-                        <option value="">otorrinolaringólogo</option>
-                        <option value="">Oftalmología</option>
-                        <option value="">Psiquiatra</option>
-                        <option value="">Ortopedia</option>
-                        <option value="">psicologo</option>
+                    <select name="profecion" id="profecion" name="profecion">
+                        <option value="medico_familiar">medico familiar</option>
+                        <option value="medico_interno">medico interno</option>
+                        <option value="pediatria">pediatría</option>
+                        <option value="Ginecologo">Ginecologo</option>
+                        <option value="cirujano_general">cirujano general</option>
+                        <option value="dermatologo">dermatólogo</option>
+                        <option value="cardiologia">Cardiólogo</option>
+                        <option value="otorrinolaringologo">otorrinolaringólogo</option>
+                        <option value="Oftalmologia">Oftalmología</option>
+                        <option value="Psiquiatra">Psiquiatra</option>
+                        <option value="Ortopedia">Ortopedia</option>
+                        <option value="psicologo">psicologo</option>
                     </select>
                 </td>
             </tr>
         </table>
+        Registrar:<input id="Boton" name="Boton" type="submit">
     </form>
 </center>
 </body>
