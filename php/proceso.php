@@ -11,7 +11,7 @@ if ($nomPaciente =="" || $nomMedico == "" || $fecha == "" || $hora == "" || $esp
 	echo "Faltan llenar campos";
 }
 else{
-	$sql = 'INSERT INTO usuario(nombreUsuario, edadUsuario, correoUsuario, passUsuario) VALUES ("'.$nomPaciente.'","'.$nomMedico.'","'.$fecha.'","'.$hora.'","'.$especialidad.'")';
+	$sql = 'INSERT INTO usuario(Nombre_Paciente, Nombre_Medico, Fecha, Hora, Especialidad_Medico) VALUES ("'.$nomPaciente.'","'.$nomMedico.'","'.$fecha.'","'.$hora.'","'.$especialidad.'")';
 
 	//Ejecutar SQL de insercion a la BD
 	$resultado = DataBase::ejecutar_sql($sql);
