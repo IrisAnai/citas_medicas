@@ -5,11 +5,6 @@ $nomMedico = $_POST['medico'];
 $fecha = $_POST['fecha'];
 $hora = $_POST['hora']; #Variables del index.html
 $especialidad =$_POST['profecion'];
-echo $nomPaciente, "<br>";
-echo $nomMedico, "<br>";
-echo $fecha, "<br>";
-echo $hora, "<br>";
-echo $especialidad, "<br>";
 
 //conexion en base de datos, formulario html y proceso
 if ($nomPaciente =="" || $nomMedico == "" || $fecha == "" || $hora == "" || $especialidad == "") {
