@@ -7,7 +7,7 @@ class Database{
 	private $_host = "localhost"; //Variable para la ruta del servidor
 	private $_user = "root"; //Variable para el nombre de usuario para la cuenta de mysql
 	private $_pass = ""; //Variable para la contrasena del usuario para la cuenta de mysql
-	private $_db = "registrousuario"; // Variable para el nombre de la base de datos a la que se va a conectar
+	private $_db = "citasmedicas"; // Variable para el nombre de la base de datos a la que se va a conectar
 
 	private static $_instancia;
 
