@@ -8,37 +8,36 @@
 /* Fondo general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*letra*/
-    
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;/*Función: Hace que el <body> ocupe el 100% de la altura visible del navegador*/
+    display: flex;/*Convierte el <body> en un contenedor flexible*/
+    justify-content: center;/*Centra el contenido horizontalmente dentro del <body>*/
+    align-items: center;/*Centra el contenido verticalmente dentro del <body>*/
 }
 
 /* Contenedor centrado */
 .center {
-    text-align: center;
-    padding: 40px;
+    text-align: center;/*Centra el texto horizontalmente dentro del contenedor*/
+    padding: 40px;/*Agrega espacio interno de 40px en todos los lados*/
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;/*Redondea las esquinas del contenedor*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);/*Agrega una sombra debajo del contenedor*/
 }
 
 /* Título */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    font-size: 2.5em;/* Define el tamaño del texto*/
+    margin-bottom: 30px;/*-Agrega espacio de 30px debajo del <h1>*/
     color: #00796b;
 }
 
 /* Botón estilizado */
 button {
     background-color: #00796b;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;/*Elimina el borde por defecto del botón*/
+    padding: 12px 24px;/*Agrega espacio interno*/
+    border-radius: 8px;/*Redondea las esquinas del botón*/
+    cursor: pointer;/*Cambia el cursor a una mano cuando pasas sobre el botón*/
+    transition: background-color 0.3s ease;/*Suaviza el cambio de color cuando el botón cambia de estado */
 }
 
 button:hover {
@@ -47,9 +46,64 @@ button:hover {
 
 /* Enlace dentro del botón */
 button a {
-    text-decoration: none;
+    text-decoration: none;/*Elimina el subrayado típico de los enlaces*/
     color: white;
     font-weight: bold;
     font-size: 1em;
 }
-/*:)*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00796b;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Contenedor centrado */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botón estilizado */
+button {
+  background-color: #00796b;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Enlace dentro del botón */
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
