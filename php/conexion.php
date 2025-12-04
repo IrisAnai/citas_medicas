@@ -65,7 +65,7 @@ class Database{
 		}
 	}
 	//Metodo para obtener una consulta a la base de datos
-	public function get_rows(){
+	public static function get_rows(){
 		//Para consultas que devuelven datos
 		if(!self::es_string($sql)){
 			exit();
