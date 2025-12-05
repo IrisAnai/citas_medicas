@@ -16,5 +16,5 @@ else{
 	//Ejecutar SQL de insercion a la BD
 	$resultado = DataBase::ejecutar_sql($sql);
 
-	echo "Respuesta del servidor:".$resultado;
+	?> <a href="../templates/verPacientes.php"><button>Ver pacientes</button></a> <?php
 }
