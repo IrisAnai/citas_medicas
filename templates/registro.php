@@ -9,6 +9,7 @@
 <body>
 <center>
     <h1>Agendar cita</h1>
+    <a href="./menu.php"><button>Regresar</button></a>
     <form action="../php/proceso.php" method="post">
         <table>
             <tr>
